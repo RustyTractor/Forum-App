@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin123@gmail.com",
+      "password": "admin123",
+      "img": "",
+      "posts": []
+    },
+    {
+      "username": "RustyTractor",
+      "email": "urbanotto999@gmail.com",
+      "password": "Menomano99",
+      "img": "",
+      "posts": [],
+      "id": 2
+    },
+    {
+      "username": "KőrösiKálmán!",
+      "email": "admin@gmail.com",
+      "password": "dd9e40fe0037",
+      "img": "",
+      "posts": [],
+      "id": 3
+    },
+    {
+      "username": "friccijoe",
+      "email": "h985958@stud.u-szeged.hu",
+      "password": "Marko123",
+      "img": "",
+      "posts": [],
+      "id": 4
+    },
+    {
+      "username": "BenedekElek",
+      "email": "BenedekElek@gmail.com",
+      "password": "Benedek123",
+      "img": "",
+      "posts": [],
+      "id": 5
+    },
+    {
+      "username": "Benedek Elek",
+      "email": "BenedekElek123@gamil.com",
+      "password": "Menomano99",
+      "img": "",
+      "posts": [],
+      "id": 6
+    },
+    {
+      "username": "GörbeSándor",
+      "email": "gorbesandor99@gmail.com",
+      "password": "menomano99",
+      "img": "",
+      "posts": [],
+      "id": 7
+    },
+    {
+      "username": "tata123",
+      "email": "tata123@gmail.com",
+      "password": "Menomano99",
+      "img": "",
+      "posts": [],
+      "id": 8
+    }
+  ]
+}
