@@ -6,63 +6,36 @@
       "email": "admin123@gmail.com",
       "password": "admin123",
       "img": "",
-      "posts": []
+      "posts": 0
     },
     {
       "username": "RustyTractor",
       "email": "urbanotto999@gmail.com",
       "password": "Menomano99",
       "img": "",
-      "posts": [],
+      "posts": 3,
       "id": 2
-    },
+    }
+  ],
+  "post": [
     {
-      "username": "KőrösiKálmán!",
-      "email": "admin@gmail.com",
-      "password": "dd9e40fe0037",
-      "img": "",
-      "posts": [],
-      "id": 3
-    },
+      "userId": 2,
+      "title": "What are Promises ?",
+      "text": "Maybe a bot question , but i dont understend what are the Promises... :(",
+      "comments": 0,
+      "date": "2022-09-18T13:26:07.876Z",
+      "id": 1
+    }
+  ],
+  "comment": [
     {
-      "username": "friccijoe",
-      "email": "h985958@stud.u-szeged.hu",
-      "password": "Marko123",
-      "img": "",
-      "posts": [],
-      "id": 4
-    },
-    {
-      "username": "BenedekElek",
-      "email": "BenedekElek@gmail.com",
-      "password": "Benedek123",
-      "img": "",
-      "posts": [],
-      "id": 5
-    },
-    {
-      "username": "Benedek Elek",
-      "email": "BenedekElek123@gamil.com",
-      "password": "Menomano99",
-      "img": "",
-      "posts": [],
-      "id": 6
-    },
-    {
-      "username": "GörbeSándor",
-      "email": "gorbesandor99@gmail.com",
-      "password": "menomano99",
-      "img": "",
-      "posts": [],
-      "id": 7
-    },
-    {
-      "username": "tata123",
-      "email": "tata123@gmail.com",
-      "password": "Menomano99",
-      "img": "",
-      "posts": [],
-      "id": 8
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "author": "József!",
+      "text": "Random Comment text",
+      "likes": 0,
+      "dislikes": 0
     }
   ]
 }

@@ -1,11 +1,20 @@
-import React, { useState } from "react";
-import Card from "./common/Card";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import ForumContext from "../../contexts/ForumContext";
+import Card from "../common/Card";
 
 const Login = () => {
   const { REACT_APP_API } = process.env;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  const { stateUser, dispatchUser } = useContext(ForumContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    stateUser.isLogedIn && navigate("/forum/home");
+  }, [stateUser.isLogedIn, navigate]);
 
   const onInputChange = (type, value) => {
     switch (type) {
@@ -31,10 +40,11 @@ const Login = () => {
         if (data.length === 0 && error === "") {
           setError("Wrong Username or Password!");
         } else if (data.length !== 0) {
-          alert("Successfuly Login!");
+          dispatchUser({ type: "LOGIN", payload: data[0] });
           setUsername("");
           setPassword("");
           setError("");
+          navigate("/forum/user");
         }
       });
   };
@@ -67,6 +77,14 @@ const Login = () => {
           <button type="submit" disabled={username === "" && password === ""}>
             Login
           </button>
+        </div>
+        <br />
+        <div className="inputRow">
+          Don't have account? Try to create one{" "}
+          <Link to={"/register"}>HERE</Link>!
+        </div>
+        <div className="inputRow">
+          Try to use the page as <Link to={"/forum/home"}>GUEST</Link>.
         </div>
       </form>
     </Card>

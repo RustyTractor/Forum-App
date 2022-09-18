@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { registerUser } from "../fakeDatabase/handler";
+import { registerUser } from "../../fakeDatabase/handler";
 import { useNavigate } from "react-router-dom";
 
-import Card from "./common/Card";
+import Card from "../common/Card";
 
 const Register = () => {
   const { REACT_APP_API } = process.env;
