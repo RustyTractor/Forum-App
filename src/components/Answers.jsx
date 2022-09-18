@@ -4,9 +4,9 @@ import ForumContext from "../contexts/ForumContext";
 import { getUser } from "../fakeDatabase/handler";
 import Card from "./common/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComments, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faComments } from "@fortawesome/free-solid-svg-icons";
 import Comments from "./comments/Comments";
-import CommentAdd from "./comments/CommentAdd";
+
 const Answers = () => {
   const location = useLocation();
   const { filteredPost } = useContext(ForumContext);

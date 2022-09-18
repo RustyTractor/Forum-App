@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../common/Card";
 
 const CommentAdd = () => {
-  const [isClosed, setIsClosed] = useState(true);
   return (
     <Card className={"commentCard"}>
       <form>
